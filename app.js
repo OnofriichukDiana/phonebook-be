@@ -12,7 +12,7 @@ const app = express();
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
 app.use(logger(formatsLogger));
-app.use(cors("https://do-phonebook.netlify.app"));
+app.use(cors("https://phonebook-fe.onrender.com"));
 app.use(express.json());
 app.use(express.static("public"));
 
